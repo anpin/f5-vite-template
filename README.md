@@ -1,6 +1,6 @@
 # PerfectFifth Minimal App
 
-This is a small Fable app project with PerfectFifth p5.js to F# bindings and vite devserver. For now it references `PerfectFifth` fork as submodule and to facilitate upstream development. 
+This is a small Fable app project with PerfectFifth p5.js to F# bindings and vite devserver. For now it references `PerfectFifth` fork as submodule to facilitate upstream development. 
 
 ## Run it in a few steps
 
@@ -10,12 +10,10 @@ This is a small Fable app project with PerfectFifth p5.js to F# bindings and vit
     cd f5-vite-template
     git pull --recurse-submodules
     ```
-
 - get into nix shell with all the tools  (you can skip this step)
     ```
     nix develop
     ```
-
 - if you skipped above step you might need 
     ```
     dotnet tool restore 
@@ -24,11 +22,9 @@ This is a small Fable app project with PerfectFifth p5.js to F# bindings and vit
     ```
     dotnet pack perfect-fifth/src -o perfect-fifth/result
     ```
-
 - run dev server
     ```
     yarn start 
-
     ```
 - change some code in `src/App.fs` and see the change
 - if reload is not happening do `dotnet fable clean src`
