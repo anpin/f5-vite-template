@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "start": "dotnet fable watch src --run vite",
+    "build": "dotnet fable src && vite build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-inject": "^5.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "ts2fable": "^0.7.1",
+    "vite": "^4.1.4"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "p5": "^1.6.0"
+  }
+}
