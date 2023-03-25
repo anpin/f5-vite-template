@@ -22,6 +22,10 @@ This is a small Fable app project with PerfectFifth p5.js to F# bindings and vit
     ```
     dotnet pack perfect-fifth/src -o perfect-fifth/result
     ```
+- restore js dependencies 
+    ```
+    yarn
+    ```
 - run dev server
     ```
     yarn start 
