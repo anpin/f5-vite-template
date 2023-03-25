@@ -1,6 +1,6 @@
-{ pkgs  }: 
+{ pkgs  } : with pkgs;
 mkShell {
-  packages = with pkgs; [
+  packages = [
    dotnet-sdk_7
    nuget-to-nix
    fable
